@@ -1,3 +1,5 @@
+#define ROWS 5
+
 enum{
 	SHEEP = 1,
 	STONE = 2,
@@ -14,5 +16,6 @@ struct tile{
 
 struct map{
 	struct tile **game_map; // Matrix
-
+	int *row_amount; How many tiles are in each row.
+	int rows;
 };
